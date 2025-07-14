@@ -7,12 +7,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-    # alb.ingress.kubernetes.io/subnets: "subnet-0aa439b4ddafcca10,subnet-0b95df318219145ca,subnet-0ccca36474902829a"
+    alb.ingress.kubernetes.io/subnets: "subnet-06ab6ade2686c5950,subnet-02986183afd120264,subnet-0220ff71a7464553d"
 spec:
   ingressClassName: alb
   rules:
-    - host: amanpathakdevops.study
-      http:
+    - http:
         paths:
           - path: /api
             pathType: Prefix
